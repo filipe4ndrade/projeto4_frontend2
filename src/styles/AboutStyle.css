@@ -1,0 +1,156 @@
+/* About Section Styles */
+.about-section {
+  padding: 150px 0 80px 0;
+  background-color: #f8f9fa;
+}
+
+.about-image img {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.02);
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #dc3545;
+  margin-bottom: 1.5rem;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.mission-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-top: 3rem;
+}
+
+.values-row {
+  margin-top: 2rem;
+}
+
+.value-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.value-card h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.value-icon {
+  margin-bottom: 1rem;
+}
+
+.team-section {
+  margin-top: 4rem;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.team-section .lead {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.team-member {
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-image img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid #dc3545;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.team-member:hover .team-image img {
+  border-color: #ff6b6b;
+  box-shadow: 0 8px 25px rgba(220, 53, 69, 0.3);
+}
+
+.team-member h5 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.team-member .text-muted {
+  font-size: 1rem;
+  color: #999 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 120px 0 50px 0;
+  }
+
+  .about-content h2,
+  .mission-section h2,
+  .team-section h2 {
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .value-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .team-image img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-content h2,
+  .mission-section h2,
+  .team-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .value-card h4 {
+    font-size: 1.3rem;
+  }
+}

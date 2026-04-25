@@ -1,0 +1,130 @@
+/* ==========================================================================
+   IMPORTAÇÃO DE FONTES
+   ========================================================================== */
+/* Lilita One: Usada para títulos informais/divertidos */
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+/* Oswald: Fonte condensada ideal para títulos e botões */
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+/* Roboto: Fonte padrão para textos de leitura (parágrafos) */
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* ==========================================================================
+   RESET E CONFIGURAÇÕES GERAIS
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Garante que padding/border não aumentem o tamanho do elemento */
+}
+
+/* Variáveis de Ambiente (Centraliza cores e fontes para fácil manutenção) */
+:root {
+  /* Famílias de Fontes */
+  --roboto-font: "Roboto", sans-serif;
+  --lilita-font: "Lilita One", cursive;
+  --oswald-font: "Oswald", sans-serif;
+
+  /* Paleta de Cores */
+  --light-black: #333;
+  --light-white: #f7f7f7;
+  --light-red: #e3000e;
+  --light-grey: #f6f9fa;
+  --light-grey-2: #dddddd;
+  --white: #fff;
+  --yellow: #f7be27;
+  --grey: #757575;
+  --brown: #6f5e4d;
+  --bg-coffee: #642f21;
+}
+
+/* Configuração base do corpo da página */
+body,
+html {
+  font-size: 1rem; /* Define 16px como base */
+  font-family: var(--roboto-font);
+  font-weight: 300;
+}
+
+/* Ajuste de responsividade: Diminui a fonte global em telas menores que 992px */
+@media (max-width: 992px) {
+  body,
+  html {
+    font-size: 0.875rem; /* Aproximadamente 14px */
+  }
+}
+
+/* ==========================================================================
+   TIPOGRAFIA (TÍTULOS E TEXTOS)
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--oswald-font);
+  font-weight: 500;
+  text-transform: uppercase; /* Todos os títulos ficam em MAIÚSCULO */
+  line-height: 1.3;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* Estilização de links */
+a {
+  color: var(--light-black);
+  text-decoration: none;
+  /* Transições suaves para efeitos de hover em múltiplos navegadores */
+  transition: all 400ms ease-in-out;
+}
+
+/* ==========================================================================
+   ELEMENTOS DE INTERFACE (UI)
+   ========================================================================== */
+
+/* Barra de rolagem customizada (Webkit - Chrome/Edge/Safari) */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--yellow); /* A barra de rolagem será amarela */
+}
+
+/* Botões Padrão */
+
+/* Botão Amarelo (Geralmente para "Pedir Agora") */
+.order_now {
+  color: var(--light-black);
+  background: var(--yellow);
+  border: 1px solid var(--yellow);
+  padding: 15px 38px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-family: var(--oswald-font);
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efeito de inversão de cores no hover do botão amarelo */
+.order_now:hover,
+.order_now:focus {
+  color: var(--white);
+  background: transparent;
+  border-color: var(--white);
+}
+
+/* Botão Vermelho */
+.btn_red {
+  color: var(--white);
+  background: var(--light-red);
+  border: 1px solid var(--light-red);
+}
+
+/* Efeito de transparência no hover do botão vermelho */
+.btn_red:hover,
+.btn_red:focus {
+  color: var(--light-red);
+  background: transparent;
+  border-color: var(--light-red);
+}

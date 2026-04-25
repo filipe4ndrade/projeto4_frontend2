@@ -1,0 +1,260 @@
+/* Blog Section Styles */
+.blog-section {
+  padding: 150px 0 80px 0;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.blog-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #dc3545;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.blog-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.blog-card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.blog-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.blog-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.blog-card:hover .blog-image {
+  transform: scale(1.1);
+}
+
+.category-badge-blog {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.blog-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 1rem;
+}
+
+.blog-author,
+.blog-date {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.blog-post-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  min-height: 70px;
+}
+
+.blog-excerpt {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.read-time {
+  font-size: 0.9rem;
+  color: #999;
+  display: flex;
+  align-items: center;
+}
+
+.read-more-btn {
+  border: 2px solid #dc3545;
+  color: #dc3545;
+  padding: 6px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background: #dc3545;
+  color: white;
+  transform: translateX(5px);
+}
+
+.newsletter-box {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  padding: 50px 40px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(220, 53, 69, 0.3);
+}
+
+.newsletter-box h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.newsletter-box p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter-form .form-control {
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  font-size: 1rem;
+}
+
+.newsletter-form .form-control:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.subscribe-btn {
+  background: white;
+  color: #dc3545;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 25px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.subscribe-btn:hover {
+  background: #f8f9fa;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .blog-title {
+    font-size: 2.5rem;
+  }
+
+  .blog-image-wrapper {
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-section {
+    padding: 120px 0 50px 0;
+  }
+
+  .blog-title {
+    font-size: 2rem;
+  }
+
+  .blog-subtitle {
+    font-size: 1rem;
+  }
+
+  .blog-image-wrapper {
+    height: 200px;
+  }
+
+  .blog-post-title {
+    font-size: 1.2rem;
+    min-height: auto;
+  }
+
+  .blog-excerpt {
+    font-size: 0.95rem;
+  }
+
+  .blog-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .newsletter-box {
+    padding: 40px 30px;
+  }
+
+  .newsletter-box h4 {
+    font-size: 1.5rem;
+  }
+
+  .newsletter-box p {
+    font-size: 1rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .subscribe-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-footer {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .read-more-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

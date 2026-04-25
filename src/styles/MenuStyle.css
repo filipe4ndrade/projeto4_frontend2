@@ -1,0 +1,186 @@
+/* Menu Section Styles */
+.menu-section {
+  padding: 150px 0 80px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.menu-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #dc3545;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.menu-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.burger-card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.burger-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.burger-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.burger-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.burger-card:hover .burger-image {
+  transform: scale(1.1);
+}
+
+.category-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(220, 53, 69, 0.9);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.burger-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+
+.burger-description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.burger-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.burger-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #dc3545;
+}
+
+.add-to-cart-btn {
+  background: #dc3545;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background: #c82333;
+  transform: scale(1.05);
+}
+
+.menu-info-box {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  padding: 40px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(220, 53, 69, 0.3);
+}
+
+.menu-info-box h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.menu-info-box p {
+  font-size: 1.1rem;
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .burger-image-wrapper {
+    height: 220px;
+  }
+
+  .menu-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-section {
+    padding: 120px 0 50px 0;
+  }
+
+  .menu-title {
+    font-size: 2rem;
+  }
+
+  .menu-subtitle {
+    font-size: 1rem;
+  }
+
+  .burger-image-wrapper {
+    height: 200px;
+  }
+
+  .burger-name {
+    font-size: 1.2rem;
+  }
+
+  .burger-description {
+    font-size: 0.9rem;
+  }
+
+  .menu-info-box {
+    padding: 30px 20px;
+  }
+
+  .menu-info-box h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .burger-footer {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .add-to-cart-btn {
+    width: 100%;
+  }
+}
